@@ -1,0 +1,17 @@
+security:
+  ignored: /v2/api-docs,/configuration/ui,/swagger-resources,/swagger-resources/**,/configuration/security,/swagger-ui.html,/webjars/**,/public/**,/management/**,/env/**
+  oauth2:
+      resource:
+          userInfoUri: http://localhost:8080/auth/realms/TDC/protocol/openid-connect/userinfo
+          preferTokenInfo: false
+
+server: 
+    use-forward-headers: true
+    port: 8083
+hystrix: 
+  shareSecurityContext: true
+feign: 
+ hystrix:
+  enabled: true
+
+  
