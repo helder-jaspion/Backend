@@ -1,5 +1,7 @@
 package br.com.cdsoft.rest;
 
+import java.util.Properties;
+
 import javax.ws.rs.core.MediaType;
 
 import org.springframework.http.HttpStatus;
@@ -11,8 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestResource {
 	@RequestMapping(produces = MediaType.APPLICATION_JSON, path = "/properties", method = RequestMethod.GET)
-	public ResponseEntity<String> getProperties() {
-		return new ResponseEntity<String>(System.getProperties().toString(), HttpStatus.OK);
+	public ResponseEntity<Properties> getProperties() {
+
+		return new ResponseEntity<Properties>(System.getProperties(), HttpStatus.OK);
 	}
 
 }

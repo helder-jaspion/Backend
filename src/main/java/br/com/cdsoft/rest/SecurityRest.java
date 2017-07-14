@@ -6,13 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cdsoft.oauth.dto.JSONValue;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiKeyAuthDefinition;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.Authorization;
 import io.swagger.annotations.AuthorizationScope;
-import io.swagger.annotations.BasicAuthDefinition;
 import io.swagger.annotations.ExternalDocs;
 import io.swagger.annotations.OAuth2Definition;
 import io.swagger.annotations.Scope;
